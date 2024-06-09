@@ -1,0 +1,381 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url();
+}
+
+body{
+    background-color: #e0dfd8;
+}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: #206e95;
+}
+
+button:hover{
+    background-color: #051d40;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{color: #206e95;}
+
+header{
+    background-color: #e0dfd8;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo-nav{
+    height: 85px;
+    width: 85px;
+}
+
+header p{
+    padding: 20px 30px;
+    font-weight: bold;
+    color: #206e95;
+    font-size: 3em;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 1.7em;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: #206e95;
+}
+
+#principal h1{
+    font-size: 3em;
+    color: #e0dfd8;
+    padding: 25px 0px;
+}
+#principal h2{
+    font-size: 1.5em;
+    color: #e0dfd8;
+    margin-bottom: 5px;
+}
+#principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgb(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+    )
+    ,url("../assets/imagenes/img-principal.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#principal button{
+    font-size: 1.4em;
+    padding: 10px 10px;
+    margin-top: 15px;
+}
+#somos .container{
+    text-align: center;
+    padding: 200px 12px;
+}
+#somos h2{
+    font-size: 1.9em;
+    margin-bottom: 15px
+}
+#somos p{
+    font-size: 18px;
+    margin: 10px;
+}
+#nuestros-servicios{
+    background-color: rgb(30, 30, 30);
+    color: #e0dfd8;
+    text-align: center;
+}
+#nuestros-servicios .container{
+    padding: 150px 15px;
+}
+#nuestros-servicios h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+#nuestros-servicios p{
+    display: none;
+}
+#nuestros-servicios .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)   
+    )
+    ,url(../assets/imagenes/img-carta1.jpg);
+}
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)   
+    )
+    ,url(../assets/imagenes/img-carta2.jpg);
+}
+.carta button{
+    margin-top: 10px;
+}
+#caracteristicas .container{
+    text-align: center;
+    padding: 250px 12px;
+}
+#caracteristicas li{
+    margin: 15px 0px;
+    font-weight: bold;
+    font-size: 1.25em;
+    padding: 0px 0px 30px 0px;
+}
+#caracteristicas ul{
+    list-style: none;
+}
+#caracteristicas img{
+    width: 2.5em;
+    height: 2.5em;
+}
+#contacto .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+    text-align: center;
+}
+#contacto .input-box{
+    position: relative;
+}
+#contacto input{
+    width: 350px;
+    height: 40px;
+    padding: 0px 10px;
+    background: rgba(30, 30, 30, 0.9);
+    border: 3px ;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    margin: 5px;
+    color: #e0dfd8;
+}
+#contacto input::placeholder,
+textarea::placeholder{
+    color: #e0dfd8
+}
+#contacto input:focus::placeholder,
+textarea:focus::placeholder{
+    color: transparent;
+}
+#contacto textarea{
+    width: 350px;
+    height: 130px;
+    padding: 10px;
+    background: rgba(30, 30, 30, 0.9);
+    border: 3px ;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    margin: 5px;
+    color: #e0dfd8;
+}
+#contacto h2{
+    font-size: 3em;
+    color: #206e95;
+}
+#footer .container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-height: 100vh;
+}
+.footer{
+    position: relative;
+    width: 100%;
+    background: rgba(30, 30, 30, 0.9);
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px 5px;
+    flex-wrap: wrap;
+}
+.icon-elem{
+    list-style: none;
+}
+.icon{
+    color: #e0dfd8;
+    font-size: 32px;
+    display: inline-block;
+    margin: 0 10px;
+    transition: 0.3s;
+}
+.icon:hover{
+    transform: translateY(-10px);
+}
+.container-menu{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+.menu-elem{
+    list-style: none;
+}
+.menu-icon{
+    color: #e0dfd8;
+    font-size: 20px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    transition: 0.3s;
+}
+.menu-icon:hover{
+    color: #206e95;
+}
+
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    #principal h1{
+        font-size: 5em;
+    }
+    #principal h2{
+        font-size: 2.5em;
+    }
+    #somos .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #somos .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #somos h2{
+        margin-top: 0px;
+    }
+    #somos .img-container{
+        background-image: url(../assets/imagenes/imagen-somos.png);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+    #nuestros-servicios .servicios{
+        display: flex;
+        justify-content: center;
+    }
+    #nuestros-servicios p{
+        display: block;
+        margin: 40px;
+    }
+    #nuestros-servicios h2{
+        font-size: 4em;
+    }
+    #nuestros-servicios h3{
+        margin-top: 0;
+    }
+    #nuestros-servicios .carta{
+        padding: 50px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    }
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(../assets/imagenes/img-carta1.jpg);
+    }
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(../assets/imagenes/img-carta2.jpg);
+    }
+    footer.content{
+        justify-content: flex-end;
+    }
+}
