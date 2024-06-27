@@ -1,0 +1,85 @@
+@media (min-width: 850px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+    #principal h1{
+        font-size: 5em;
+    }
+    #principal h2{
+        font-size: 2.5em;
+    }
+    #somos .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #somos .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #somos h2{
+        margin-top: 0px;
+    }
+    #somos .img-container{
+        background-image: url(../assets/imagenes/imagen-somos.png);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+    #nuestros-servicios .servicios{
+        display: flex;
+        justify-content: center;
+    }
+    #nuestros-servicios p{
+        display: block;
+        margin: 40px;
+    }
+    #nuestros-servicios h2{
+        font-size: 4em;
+    }
+    #nuestros-servicios h3{
+        margin-top: 0;
+    }
+    #nuestros-servicios .carta{
+        padding: 50px;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgba(50, 50, 50, 1);
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    }
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(../assets/imagenes/img-carta1.jpg);
+    }
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url(../assets/imagenes/img-carta2.jpg);
+    }
+    footer.content{
+        justify-content: flex-end;
+    }
+}

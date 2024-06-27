@@ -1,0 +1,11 @@
+html{
+    scroll-behavior: smooth;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+body{
+    background-color: $color-secundario;
+}
+.color-acento{
+    color: $color-primario;
+}

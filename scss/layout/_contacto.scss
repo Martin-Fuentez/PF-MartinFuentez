@@ -1,0 +1,48 @@
+#contacto {
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+        text-align: center;
+    }
+    .input-box{
+        position: relative;
+    }
+    input{
+        width: 350px;
+        height: 40px;
+        padding: 0px 10px;
+        background: rgba(30, 30, 30, 0.9);
+        border: 3px ;
+        letter-spacing: 1px;
+        border-radius: 5px;
+        margin: 5px;
+        color: $color-secundario;
+    }
+    input::placeholder,
+    textarea::placeholder{
+        color: $color-secundario;
+    }
+    input:focus::placeholder,
+    textarea:focus::placeholder{
+        color: transparent;
+    }
+    textarea{
+        width: 350px;
+        height: 130px;
+        padding: 10px;
+        background: rgba(30, 30, 30, 0.9);
+        border: 3px ;
+        letter-spacing: 1px;
+        border-radius: 5px;
+        margin: 5px;
+        color: $color-secundario;
+    }
+    h2{
+        font-size: 3em;
+        color: $color-primario;
+    }
+}
