@@ -1,0 +1,19 @@
+#donde-operamos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 150px 20px 40px 20px;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    
+    .text-donde-operamos{
+        font-size: 2em;
+        background-color: $color-secundario;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    .img-donde-operamos{
+        padding-top: 5px;
+    }
+}

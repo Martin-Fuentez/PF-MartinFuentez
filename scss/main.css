@@ -289,6 +289,25 @@ header nav a:hover {
   color: #206e95;
 }
 
+#donde-operamos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 150px 20px 40px 20px;
+  text-align: center;
+  background-color: rgb(30, 30, 30);
+}
+#donde-operamos .text-donde-operamos {
+  font-size: 2em;
+  background-color: #e0dfd8;
+  padding: 10px;
+  border-radius: 15px;
+}
+#donde-operamos .img-donde-operamos {
+  padding-top: 5px;
+}
+
 @media (min-width: 850px) {
   header {
     position: fixed;
